@@ -1,0 +1,20 @@
+/* Color Palette:
+    White: #FFFFFF
+    Black: #212121
+    Orange: #FF9D60
+    Blue: #07BDD6
+    Lime Green: #D1EC3F
+    Lavendar: #E6B4F4
+    Hot Pink: #FF4AB3
+*/
+    
+
+
+body {
+  background-color: #FFFFFF; 
+}
+
+p {
+    color: #212121;
+
+}
