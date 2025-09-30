@@ -9,12 +9,120 @@
 */
     
 
+/*Change fonts, have alternate fonts available*/
 
-body {
-  background-color: #FFFFFF; 
+html, body {
+    height: 100%;
+    margin: 0;
+    color: #212121;
+    font-size: 1rem;
+    background-color: #FFFFFF;
 }
 
-p {
+h1 {
+    font-family: serif;
+    font-size: 2.5rem;
     color: #212121;
 }
 
+h3 {
+    font-family: "Futura", monospace;
+    font-size: 1.5rem;
+    color: #212121;
+}
+
+p b {
+    font-family: "Futura", monospace;
+    color: #212121;
+}
+
+/*responsiveness of other devices
+
+@media (max-width: 600px) {
+  .recipe-image img {
+    max-width: 95%;
+  }
+}
+  */
+
+/*back to top button
+.back-to-top {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #333;
+  color: white;
+  padding: 10px 15px;
+  text-decoration: none;
+  border-radius: 5px;
+  font-size: 14px;
+  opacity: 0.7;
+  transition: opacity 0.3s ease;
+}
+
+.back-to-top:hover {
+  opacity: 1;
+}
+*/
+
+/* Landing Page */
+
+.landing-title,
+.title,
+.home-link {
+    display: flex;
+    justify-content: center;
+}
+
+.landing-recipes ul {
+    display: flex;
+    justify-content: space-evenly;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.landing-recipes li a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.landing-page-images {
+    display: flex;
+    justify-content: center;
+}
+
+.landing-page-images img {
+    max-width: 80%;
+    height: auto;
+}
+
+/* All Menu Items*/
+.menu-page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 1rem;
+}
+
+.description {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.menu-image {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin: 1rem 0; /* keeps spacing consistent */
+}
+
+.menu-image img {
+    max-width: 80%;
+    height: auto;
+    display: block; /* removes default inline spacing issues */
+    margin: 0 auto; /* centers image inside figure */
+}

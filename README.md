@@ -1,6 +1,6 @@
 # Questions/Notes for Owners:
     Include price? Or leave blank for flexbility (since you can't order online anyways?)
-    Find out what asteriks on menu mean
+
 
     Chose to leave off allergy warning since you can't order online, focus is solely on menu items themselves 
 
