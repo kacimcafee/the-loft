@@ -154,3 +154,21 @@ p b {
 }
 
  
+
+/*go over each section and understand what it is doing*/
+
+.image-gallery {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+}
+
+.image-gallery img {
+  width: 100%;
+  flex: 1 1 250px;
+  height: auto;
+  max-width: 100%;
+  object-fit: cover;
+  border-radius: 8px;
+  display: block;
+}
