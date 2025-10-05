@@ -23,6 +23,7 @@
     
     [X] Fix back to top button so it's hidden until you scroll down
     [ ] Fix hyperlinks to be more accessible 
+    [ ] Correct layout/size for video on about page
 
     [ ] Main Page Text:
         [ ] Home 
