@@ -2,6 +2,8 @@
    
     Chose to leave off allergy warnings/prices since you can't order online, focus is solely on menu items themselves 
 
+    Do we want to add coffee items too?
+
 
 # TO DO:
 
