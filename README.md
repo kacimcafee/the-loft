@@ -8,7 +8,7 @@
 # TO DO:
 
     [ ] Determine color palette for each page
-    [ ] Determine typography for each page
+    [ ] Determine typography for each page -- import custom fonts
 
     [X] Fix Navigation Bar Layout
     [ ] Fix height difference between logo and nav bar
@@ -16,10 +16,13 @@
     [ ] Add layout to pages 
 
     [ ] Contact Form:
-        [ ] Contact
-        [ ] Catering
+        [X] Contact
+        [X] Catering
+        [ ] Correct Layout 
+        [ ] Introduce custom text
     
-    [ ] Fix back to top button so it's hidden until you scroll down
+    [X] Fix back to top button so it's hidden until you scroll down
+    [ ] Fix hyperlinks to be more accessible 
 
     [ ] Main Page Text:
         [ ] Home 
@@ -31,8 +34,9 @@
 
     [ ] Menu Items:
 
-        [ ] List all Food menu items
-        [ ] Create blurb for all Food menu items
+        [ ] create dropdown for menu
+        [x] List all Food menu items
+        [ ] upload custom photos to food 
 
         [ ] List all Drink menu items
         [ ] Create blurb for all Drink menu items
