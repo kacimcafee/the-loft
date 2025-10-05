@@ -10,7 +10,8 @@
     [ ] Determine color palette for each page
     [ ] Determine typography for each page
 
-    [ ] Fix Navigation Bar Layout
+    [X] Fix Navigation Bar Layout
+    [ ] Fix height difference between logo and nav bar
 
     [ ] Add layout to pages 
 

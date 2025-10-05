@@ -39,7 +39,19 @@
          </section>
 
          <a href="#top" class="back-to-top">Back to Top</a>
+         
+         <script>
+            const backToTopButton = document.querySelector(".back-to-top");
 
+            window.addEventListener("scroll", () => {
+               if (window.scrollY > 200) {
+                  backToTopButton.classList.add("show");
+               } else {
+                  backToTopButton.classList.remove("show");
+               }
+            });
+         </script>
+ 
       </main>
 
    </body>
