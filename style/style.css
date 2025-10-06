@@ -20,8 +20,9 @@ html, body {
 
 h1 {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-size: 2.5rem;
+    font-size: 2.2rem;
     color: #212121;
+    margin-top: 3rem; /* adjust value as needed */
 }
 
 h3,
@@ -30,6 +31,7 @@ h2 {
     font-size: 1.5rem;
     color: #212121;
 }
+
 
 p,
 b {
@@ -40,7 +42,7 @@ b {
 
 a {
   font-family: "Futura", sans-serif; /* Primary font with fallback */
-  font-size: 16px;                   /* Optional size */
+  font-size: 20px;                   /* Optional size */
   color: #FF9D60;                        /* Optional color */
   text-decoration: none;              /* Remove underline */
 }
@@ -59,7 +61,7 @@ a {
 /* === LOGO ADJUSTMENTS === */
 .logo {
   transform: translateY(2px); /* visually centers logo, adjust up/down */
-  max-width: 250px;
+  max-width: 300px;
   margin: 0;
   padding: 0;
 }
@@ -73,6 +75,7 @@ a {
 /* === NAVIGATION BAR FIXES === */
 .navigation-bar {
   flex: 1; /* allow nav to take remaining space */
+  transform: translateY(27px); /* move nav slightly up */
 }
 
 .navigation-bar ul {
@@ -82,13 +85,14 @@ a {
   list-style: none;
   margin: 0;
   padding: 0;
-  gap: 1.5rem; /* space between links */
+  gap: 3rem; /* space between links */
   background: none; /* remove blue bar if undesired */
 }
 
 .navigation-bar a {
   text-decoration: none;
   color: #212121;
+  font-size: 1.3rem;
   font-family: "Futura", sans-serif;
   padding: 0.5rem;
   transition: color 0.3s ease;
@@ -103,7 +107,9 @@ a {
   .site-header {
     flex-direction: column;
     align-items: center;
+    padding: 0 1rem;
   }
+
 
   .navigation-bar ul {
     flex-direction: column;
@@ -148,6 +154,15 @@ a {
 
 
 /*Menu - Correct Flexbox! Hurrah!*/
+.menu-container {
+  max-width: 1200px;       /* limits the container width */
+  margin: 0 auto;           /* centers horizontally */
+  padding: 0 1rem;          /* optional spacing on sides */
+  text-align: center;         /* keeps text inside left-aligned */
+}
+
+
+
 .breakfast-menu, 
 .open-faced-bagels, 
 .burritos-and-bowls, 
@@ -156,6 +171,7 @@ a {
   flex-wrap: wrap;      /* let items wrap */
   gap: 20px;            /* space between */
   justify-content: space-evenly;
+  margin-bottom: 12rem;
 }
 
 .menu-item {
@@ -177,7 +193,18 @@ a {
   border-radius: 8px;
 }
 
- 
+ /* Menu Section Headers */
+.menu-heading {
+  text-align: center;       /* center the header */
+  margin: 4rem 0 2rem 0;    /* top & bottom spacing, adjust as needed */
+}
+
+.menu-heading h2 {
+  font-size: 2rem;          /* adjust size */
+  color: #212121;           /* matches your palette */
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: 600;
+}
 
 /*go over each section and understand what it is doing*/
 
@@ -202,30 +229,37 @@ a {
 
 /*contact form*/
 .contact {
-  max-width: 500px;
-  margin: 2rem auto;
-  padding: 1rem;
+  max-width: 500px;             /* keeps the form from stretching too wide */
+  margin: 2rem auto;            /* centers horizontally and adds vertical space */
+  padding: 2rem;                /* adds space inside the form so inputs don't touch edges */
   background-color: #fff;
   border-radius: 10px;
   box-shadow: 0 4px 6px rgba(0,0,0,0.1);
   font-family: "Segoe UI", Tahoma, sans-serif;
+
+  display: flex;                /* optional: for vertical alignment of items */
+  flex-direction: column;       /* stack label/input/button vertically */
+  align-items: center;          /* center all items horizontally inside the form */
+
 }
 
 .contact h2 {
   text-align: center;
+  width: 100%;                  /* make sure the heading spans the form width */
   margin-bottom: 1rem;
 }
 
 .contact label {
   display: block;
+  width: 100%;                  /* ensures labels are aligned with inputs */
   margin-top: 1rem;
   font-weight: bold;
 }
 
 .contact input,
 .contact textarea {
-  width: 100%;
-  padding: 0.5rem;
+  width: 100%;                  /* fills the form width minus padding */
+  padding: 0.75rem;             /* a bit more space inside inputs */
   margin-top: 0.25rem;
   border-radius: 5px;
   border: 1px solid #ccc;
@@ -234,7 +268,7 @@ a {
 }
 
 .contact button {
-  margin-top: 1rem;
+  margin-top: 1.5rem;
   padding: 0.75rem 1.5rem;
   background-color: #D1EC3F;
   color: #212121;
@@ -248,6 +282,12 @@ a {
 .contact button:hover {
   background-color: #bcd92f;
 }
+
+
+
+
+
+
 
 
 /*video*/
@@ -273,4 +313,29 @@ a {
   color: white;
   text-shadow: 0 0 10px rgba(0,0,0,0.7);
   pointer-events: none; /* so click passes through to link */
+}
+
+.news-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: space-evenly;
+}
+
+.news-item {
+  flex: 1 1 250px;
+  max-width: 300px;
+  background: #fff;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  padding: 15px;
+  text-align: center;
+}
+
+.news-item img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 8px;
 }
