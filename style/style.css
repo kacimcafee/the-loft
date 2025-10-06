@@ -46,65 +46,72 @@ a {
 }
 
 
-/*logo*/
-
-.logo {
-  max-width: 200px;   
-  margin: 0 auto;     
-  padding: 1rem;      
-  text-align: center; 
+/* === HEADER LAYOUT === */
+.site-header {
+  display: flex;
+  align-items: center;             /* center vertically instead of baseline */
+  justify-content: space-between;  /* logo left, nav right */
+  background-color: #07BDD6;
+  padding: 0.25rem 2rem;           /* reduce vertical spacing */
+  flex-wrap: wrap;                 /* wrap for mobile */
 }
 
+/* === LOGO ADJUSTMENTS === */
+.logo {
+  transform: translateY(2px); /* visually centers logo, adjust up/down */
+  max-width: 250px;
+  margin: 0;
+  padding: 0;
+}
 
 .logo img {
-  width: 100%;   
-  height: auto;   
+  width: 100%;
+  height: auto;
   display: block;
 }
 
-
-
-
-/*Navigation Bar*/
-.navigation-bar ul {
-  display: flex;             /* Arrange items in a row*/
-  justify-content: space-around; /* Spread evenly across the width*/
-  align-items: center;
-  list-style: none;          /* Remove bullets*/
-  margin: 0;
-  padding: 0;
-  background-color: #07BDD6;  
-  font-family: "Futura", sans-serif;
+/* === NAVIGATION BAR FIXES === */
+.navigation-bar {
+  flex: 1; /* allow nav to take remaining space */
 }
 
-.navigation-bar li {
+.navigation-bar ul {
+  display: flex;
+  justify-content: flex-end; /* align links to the right */
+  align-items: center;
+  list-style: none;
   margin: 0;
+  padding: 0;
+  gap: 1.5rem; /* space between links */
+  background: none; /* remove blue bar if undesired */
 }
 
 .navigation-bar a {
   text-decoration: none;
-  color: #333;               /* Link color*/
-  padding: 1rem;
-  display: block;
+  color: #212121;
+  font-family: "Futura", sans-serif;
+  padding: 0.5rem;
+  transition: color 0.3s ease;
 }
 
-/* Hover effect*/
 .navigation-bar a:hover {
-  color: #007bff;
+  color: #FF9D60; /* your orange accent */
 }
 
-/* Mobile / small screens */
+/* === MOBILE VIEW === */
 @media (max-width: 768px) {
-  .navigation-bar ul {
-    flex-direction: column;   /* Stack links vertically*/
-    gap: 0.5rem;              /* Small space between links*/
+  .site-header {
+    flex-direction: column;
+    align-items: center;
   }
 
-  .navigation-bar a {
-    text-align: center;
-    padding: 0.75rem;
+  .navigation-bar ul {
+    flex-direction: column;
+    align-items: center;
+    gap: 0.75rem;
   }
 }
+
 
 
 
