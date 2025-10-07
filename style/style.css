@@ -15,7 +15,7 @@ html, body {
     height: 100%;
     margin: 0;
     color: #212121;
-    font-family: 'Poppins', monospace; sans-serif; /*fix*/
+    font-family: 'Poppins', sans-serif; /*fix*/
     font-size: 1.1rem;
     background-color: #07BDD6;
 }
@@ -33,7 +33,7 @@ h1 {
 h2,
 h3,
 h4 {
-    font-family: 'Segoe UI' monospace, sans-serif; /*fix*/
+    font-family: 'Segoe UI', sans-serif; /*fix*/
     font-size: 1.5rem;
     color: #212121;
 }
@@ -212,7 +212,7 @@ a:hover {
 .menu-heading h2 {
   font-size: 2rem;          
   color: #212121;           
-  font-family: 'Segoe UI', Tahoma, Verdana, sans-serif; /*fix*/
+  font-family: 'Segoe UI', sans-serif; /*fix*/
   font-weight: 600;
 }
 
@@ -266,7 +266,7 @@ a:hover {
   background-color: #fff;
   border-radius: 10px;
   box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-  font-family: "Segoe UI", Tahoma, sans-serif; /* fix */
+  font-family: "Segoe UI", sans-serif; /* fix */
 
   display: flex;                
   flex-direction: column;       
