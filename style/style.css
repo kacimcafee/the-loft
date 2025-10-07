@@ -10,24 +10,30 @@
     
 
 
+/* ==================================== Fonts ======================================== */
 html, body {
     height: 100%;
     margin: 0;
     color: #212121;
-    font-size: 1rem;
+    font-family: 'Poppins', monospace; sans-serif; <!--fix-->
+    font-size: 1.1rem;
     background-color: #07BDD6;
 }
 
 h1 {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+   
+   font-family: 'Segoe UI', sans-serif; <!--fix-->
     font-size: 2.2rem;
     color: #212121;
-    margin-top: 3rem; /* adjust value as needed */
+    margin-top: 3rem; 
 }
 
+
+
+h2,
 h3,
-h2 {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+h4 {
+    font-family: 'Segoe UI' monospace, sans-serif; <!--fix--> 
     font-size: 1.5rem;
     color: #212121;
 }
@@ -35,35 +41,42 @@ h2 {
 
 p,
 b {
-    font-family: 'Futura', monospace;
+    font-family: 'Futura', monospace;<!--fix-->
     color: #212121;
 }
 
 
 a {
-  font-family: "Futura", sans-serif; /* Primary font with fallback */
-  font-size: 20px;                   /* Optional size */
-  color: #FF9D60;                        /* Optional color */
-  text-decoration: none;              /* Remove underline */
+  font-family: "Futura", sans-serif; 
+  font-size: 20px;                   
+  color: #212121;                        
+
+}
+
+a:hover {
+  color: #FF9D60;   
 }
 
 
-/* === HEADER LAYOUT === */
+/* ==================================== Header ======================================== */
 .site-header {
   display: flex;
-  align-items: center;             /* center vertically instead of baseline */
+  align-items: center;             
   justify-content: space-between;  /* logo left, nav right */
   background-color: #07BDD6;
   padding: 0.25rem 2rem;           /* reduce vertical spacing */
-  flex-wrap: wrap;                 /* wrap for mobile */
+  flex-wrap: wrap;                 
 }
 
-/* === LOGO ADJUSTMENTS === */
+
+
+/* ===================================== Logo ====================================== */
 .logo {
-  transform: translateY(2px); /* visually centers logo, adjust up/down */
+  transform: translateY(16px); 
   max-width: 300px;
   margin: 0;
   padding: 0;
+  margin-bottom: 2.5rem;
 }
 
 .logo img {
@@ -72,21 +85,23 @@ a {
   display: block;
 }
 
-/* === NAVIGATION BAR FIXES === */
+
+
+/* ============================= Navigation Bar ====================================== */
 .navigation-bar {
-  flex: 1; /* allow nav to take remaining space */
-  transform: translateY(27px); /* move nav slightly up */
+  flex: 1;
+  transform: translateY(27px);
 }
 
 .navigation-bar ul {
   display: flex;
-  justify-content: flex-end; /* align links to the right */
+  justify-content: flex-end; 
   align-items: center;
   list-style: none;
   margin: 0;
   padding: 0;
-  gap: 3rem; /* space between links */
-  background: none; /* remove blue bar if undesired */
+  gap: 3rem; 
+  background: none; 
 }
 
 .navigation-bar a {
@@ -102,14 +117,12 @@ a {
   color: #FF9D60; /* your orange accent */
 }
 
-/* === MOBILE VIEW === */
-@media (max-width: 768px) {
+@media (max-width: 768px) {           /* mobile */
   .site-header {
     flex-direction: column;
     align-items: center;
     padding: 0 1rem;
   }
-
 
   .navigation-bar ul {
     flex-direction: column;
@@ -121,7 +134,7 @@ a {
 
 
 
-/*back to top button*/
+/* =============================== Back to Top ====================================== */
 
   .back-to-top {
   position: fixed;
@@ -141,43 +154,41 @@ a {
 }
 
 .back-to-top.show {
-  opacity: 0.85;            /* partially visible */
+  opacity: 0.85;            
   pointer-events: auto;     /* clickable */
 }
 
 .back-to-top:hover {
-  opacity: 1;               /* fully visible on hover */
+  opacity: 1;             
 }
 
 
 
 
 
-/*Menu - Correct Flexbox! Hurrah!*/
+/* ===================================== Menu ========================================= */
 .menu-container {
-  max-width: 1200px;       /* limits the container width */
-  margin: 0 auto;           /* centers horizontally */
-  padding: 0 1rem;          /* optional spacing on sides */
-  text-align: center;         /* keeps text inside left-aligned */
+  max-width: 1200px;      
+  margin: 0 auto;          
+  padding: 0 1rem;         
+  text-align: center;        
 }
-
-
 
 .breakfast-menu, 
 .open-faced-bagels, 
 .burritos-and-bowls, 
 .bagel-sandwiches {
   display: flex;
-  flex-wrap: wrap;      /* let items wrap */
-  gap: 20px;            /* space between */
+  flex-wrap: wrap;     
+  gap: 20px;           
   justify-content: space-evenly;
   margin-bottom: 12rem;
 }
 
 .menu-item {
   flex: 1 1 250px;
-  flex-wrap: wrap;      /* base width */
-  max-width: 300px;     /* don’t stretch too wide */
+  flex-wrap: wrap;      
+  max-width: 300px;   
   background: #fff;
   border-radius: 10px;
   overflow: hidden;
@@ -189,24 +200,21 @@ a {
 .menu-item img {
   width: 100%;
   height: 200px;
-  object-fit: cover;    /* uniform height */
+  object-fit: cover;   
   border-radius: 8px;
 }
 
- /* Menu Section Headers */
 .menu-heading {
-  text-align: center;       /* center the header */
-  margin: 4rem 0 2rem 0;    /* top & bottom spacing, adjust as needed */
+  text-align: center;    
+  margin: 4rem 0 2rem 0; 
 }
 
 .menu-heading h2 {
-  font-size: 2rem;          /* adjust size */
-  color: #212121;           /* matches your palette */
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 2rem;          
+  color: #212121;           
+  font-family: 'Segoe UI', Tahoma, Verdana, sans-serif; <!--fix-->
   font-weight: 600;
 }
-
-/*go over each section and understand what it is doing*/
 
 .image-gallery {
   display: flex;
@@ -227,39 +235,61 @@ a {
 
 
 
-/*contact form*/
+
+
+
+/* =============================== About ====================================== */
+
+.about-photo {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+}
+
+.about-photo img {
+  width: 50%;        
+  max-width: 400px; 
+  height: auto;
+  border-radius: 8px;
+  display: block;
+}
+
+
+
+
+
+/* ===============================Contact Form ====================================== */
 .contact {
-  max-width: 500px;             /* keeps the form from stretching too wide */
-  margin: 2rem auto;            /* centers horizontally and adds vertical space */
-  padding: 2rem;                /* adds space inside the form so inputs don't touch edges */
+  max-width: 500px;            
+  margin: 2rem auto;            
+  padding: 2rem;               
   background-color: #fff;
   border-radius: 10px;
   box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-  font-family: "Segoe UI", Tahoma, sans-serif;
+  font-family: "Segoe UI", Tahoma, sans-serif; /* fix */
 
-  display: flex;                /* optional: for vertical alignment of items */
-  flex-direction: column;       /* stack label/input/button vertically */
-  align-items: center;          /* center all items horizontally inside the form */
-
+  display: flex;                
+  flex-direction: column;       
+  align-items: center;        
 }
 
 .contact h2 {
   text-align: center;
-  width: 100%;                  /* make sure the heading spans the form width */
+  width: 100%;                  
   margin-bottom: 1rem;
 }
 
 .contact label {
   display: block;
-  width: 100%;                  /* ensures labels are aligned with inputs */
+  width: 100%;                  
   margin-top: 1rem;
   font-weight: bold;
 }
 
 .contact input,
 .contact textarea {
-  width: 100%;                  /* fills the form width minus padding */
-  padding: 0.75rem;             /* a bit more space inside inputs */
+  width: 100%;                  
+  padding: 0.75rem;            
   margin-top: 0.25rem;
   border-radius: 5px;
   border: 1px solid #ccc;
@@ -290,31 +320,45 @@ a {
 
 
 
-/*video*/
+/* =============================== Video ====================================== */
+
+/* Video Wrapper */
 .video-wrapper {
-  position: relative;
-  display: inline-block;
+  position: relative;       
+  margin: 2rem auto;        
+  max-width: 800px;        
+  width: 100%;            
   cursor: pointer;
 }
 
+/* Video Thumbnail */
 .video-wrapper img {
-  width: 100%;
-  max-width: 560px;
-  display: block;
-  border-radius: 8px;
+  width: 100%;              
+  max-width: 800px;        
+  border-radius: 10px;     
+  display: block;          
+  height: auto;      
 }
 
+/* Play Button */
 .video-wrapper .play-button {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  font-size: 3rem;
+  position: absolute;       
+  top: 50%;                 
+  left: 50%;                
+  transform: translate(-50%, -50%);  
+  font-size: 3rem;          
   color: white;
   text-shadow: 0 0 10px rgba(0,0,0,0.7);
-  pointer-events: none; /* so click passes through to link */
+  pointer-events: none;     /* allows clicks to pass through to the thumbnail */
 }
 
+
+
+
+
+/* =============================== News ====================================== */
+
+/*fix*/
 .news-gallery {
   display: flex;
   flex-wrap: wrap;
@@ -322,7 +366,7 @@ a {
   justify-content: space-evenly;
 }
 
-.news-item {
+.news-gallery {
   flex: 1 1 250px;
   max-width: 300px;
   background: #fff;
@@ -333,9 +377,9 @@ a {
   text-align: center;
 }
 
-.news-item img {
+.news-gallery img {
   width: 100%;
-  height: 200px;
+  height: auto;
   object-fit: cover;
   border-radius: 8px;
 }
