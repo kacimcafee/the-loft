@@ -10,52 +10,71 @@
       <title>The Loft</title>
    </head>
 
-   <body  id="top">
 
-      <!--===================Logo============================-->
-      <header class="site-header">
-         <div class="logo">
-            <img src="images/logo/cropped-logo.png" alt="The Loft logo">
-         </div>
-        
-         <!--===================Nav Bar============================-->
-         <nav class="navigation-bar" aria-label="Main navigation">
+      <body  id="top">
+
+         <!--===================Logo============================-->
+         <header class="site-header">
+            <div class="logo">
+               <a href="index.html">
+                  <img src="images/logo/cropped-logo.png" alt="The Loft logo">
+               </a>
+            </div>
+         
+            <!--=================== Nav Bar ============================-->
+            <nav class="navigation-bar" aria-label="Main navigation">
+               <ul>
+                  <li><a href="index.html">Home</a></li>
+                  <li><a href="menu.html">Menu</a></li>
+                  <li><a href="about.html">About</a></li>
+                  <li><a href="news.html">News</a></li>
+                  <li><a href="phonebooth.html">Phonebooth</a></li>
+                  <li><a href="catering.html">Catering</a></li>
+                  <li><a href="contact.html">Contact</a></li>
+               </ul>
+            </nav>
+
+         </header>
+
+      <main>
+         <!--===================Hero Image============================-->
+         <section class="hero-image">
+            <div class="hero-content">
+               <h1>Welcome to The Loft</h1>
+               <p>Experience food, flavor, and comfort in every bite.</p>
+               <a href="menu.html" class="btn">View Menu</a>
+            </div>
+         </section>
+
+      </main>
+      
+     <!--=================== Map Section ===========================-->
+      <section class="map-section">
+         <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3057.556!2d-104.9163145!3d38.8582258!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x871350a22c46362d:0x41b1ae865da8f7b1!2sThe%20Loft!5e0!3m2!1sen!2sus!4v1690000000000"
+            width="100%" 
+            height="400" 
+            style="border:0;" 
+            allowfullscreen="" 
+            loading="lazy" 
+            referrerpolicy="no-referrer-when-downgrade">
+         </iframe>
+      </section>
+
+      <!--====================Navigational Footer=========================-->
+      <footer class="site-footer">
+         <nav aria-label="Footer Navigation">
             <ul>
                <li><a href="index.html">Home</a></li>
                <li><a href="menu.html">Menu</a></li>
                <li><a href="about.html">About</a></li>
-               <li><a href="news.html">News</a></li>
-               <li><a href="phonebooth.html">Phonebooth</a></li>
-               <li><a href="catering.html">Catering</a></li>
                <li><a href="contact.html">Contact</a></li>
+               <li><a href="catering.html">Catering</a></li>
             </ul>
          </nav>
+         <p>&copy; 2025 The Loft</p>
+      </footer>
 
-      </header>
-
-      <!--===================Hero Image============================-->
-      <main class="home">
-
-         <section class="hero-image">
-            <img src="images/hero-image/full-room.jpg">
-         </section>
-
-         <!--===================Back to Top============================-->
-         <a href="#top" class="back-to-top">Back to Top</a>
-
-         <script>
-            const backToTopButton = document.querySelector(".back-to-top");
-
-            window.addEventListener("scroll", () => {
-               if (window.scrollY > 200) {
-                  backToTopButton.classList.add("show");
-               } else {
-                  backToTopButton.classList.remove("show");
-               }
-            });
-         </script>
-    
-      </main>
    </body>
 
  </html>

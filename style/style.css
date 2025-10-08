@@ -1,4 +1,4 @@
-/* Color Palette:
+/* Original Color Palette:
     White: #FFFFFF
     Black: #212121
     Orange: #FF9D60
@@ -7,7 +7,22 @@
     Lavendar: #E6B4F4
     Hot Pink: #FF4AB3
 */
-    
+  
+/* Updated Color Palette:
+    Lime/Orange Gradient: (to left, #ff7b29, #dfff29)
+    Middle of Lime/Orange Gradient: E1D746
+
+    White: #FFFFFF
+    Black: #212121
+    Lighter orange: ff7b29;
+    Orange:#e65902;   
+
+    Cobalt Blue: #313bf1
+    Light Blue: 00b0c7
+    Lime Green: # ecf027d9
+    Lavendar: #
+    Hot Pink: #
+*/
 
 
 /* ==================================== Fonts ======================================== */
@@ -17,7 +32,7 @@ html, body {
     color: #212121;
     font-family: 'Poppins', sans-serif; /*fix*/
     font-size: 1.1rem;
-    background-color: #07BDD6;
+    background-color: #E1D746;
 }
 
 h1 {
@@ -54,18 +69,7 @@ a {
 }
 
 a:hover {
-  color: #FF9D60;   
-}
-
-
-/* ==================================== Header ======================================== */
-.site-header {
-  display: flex;
-  align-items: center;             
-  justify-content: space-between;  /* logo left, nav right */
-  background-color: #07BDD6;
-  padding: 0.25rem 2rem;           /* reduce vertical spacing */
-  flex-wrap: wrap;                 
+  color: #FFFFFF   
 }
 
 
@@ -73,10 +77,10 @@ a:hover {
 /* ===================================== Logo ====================================== */
 .logo {
   transform: translateY(16px); 
-  max-width: 300px;
+  max-width: 200px;
   margin: 0;
   padding: 0;
-  margin-bottom: 2.5rem;
+  margin-bottom: 1rem;
 }
 
 .logo img {
@@ -87,41 +91,63 @@ a:hover {
 
 
 
-/* ============================= Navigation Bar ====================================== */
+/* ==================== Header ==================== */
+/* ============================= Header Bar (Gradient) ============================ */
+.site-header {
+  background: linear-gradient(to left, #FF4AB3, #dfff29);
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.75rem 2rem;
+  width: 100%;
+  box-sizing: border-box; /* ensures padding is included in width */
+  position: relative;
+  z-index: 10;
+  overflow-x: hidden; /* prevent horizontal overflow */
+}
+
+/* ============================= Navigation Bar ============================ */
 .navigation-bar {
   flex: 1;
-  transform: translateY(27px);
+  transform: translateY(20px);
+  max-width: 100%;
+  box-sizing: border-box;
 }
 
 .navigation-bar ul {
   display: flex;
-  justify-content: flex-end; 
+  justify-content: flex-end;
   align-items: center;
   list-style: none;
   margin: 0;
-  padding: 0;
-  gap: 3rem; 
-  background: none; 
+  padding: 0; /* remove extra horizontal padding */
+  gap: 1.8rem;
+  flex-wrap: wrap; /* wrap items to prevent overflow on smaller screens */
+}
+
+.navigation-bar li {
+  margin: 0;
 }
 
 .navigation-bar a {
+  color: white;
   text-decoration: none;
-  color: #212121;
-  font-size: 1.3rem;
-  font-family: "Futura", sans-serif;
-  padding: 0.5rem;
+  font-weight: 500;
+  padding: 0.5rem 0.75rem; /* reduced padding so it fits */
   transition: color 0.3s ease;
 }
 
 .navigation-bar a:hover {
-  color: #FF9D60; /* your orange accent */
+  color: #ed5b00;
 }
 
-@media (max-width: 768px) {           /* mobile */
+/* ============================= Mobile Responsive ============================ */
+@media (max-width: 768px) {
   .site-header {
     flex-direction: column;
     align-items: center;
-    padding: 0 1rem;
+    padding: 0.75rem 1rem; /* reduce side padding */
   }
 
   .navigation-bar ul {
@@ -131,37 +157,7 @@ a:hover {
   }
 }
 
-
-
-
-/* =============================== Back to Top ====================================== */
-
-  .back-to-top {
-  position: fixed;
-  bottom: 20px;
-  right: 20px;
-  background-color: #D1EC3F;
-  color: #212121;
-  padding: 10px 15px;
-  text-decoration: none;
-  border-radius: 5px;
-  font-family: 'futura', monospace;
-  font-size: 14px;
-
-  opacity: 0;              /* fully transparent */
-  pointer-events: none;     /* can’t click while hidden */
-  transition: opacity 0.4s ease;  /* smooth fade */
-}
-
-.back-to-top.show {
-  opacity: 0.85;            
-  pointer-events: auto;     /* clickable */
-}
-
-.back-to-top:hover {
-  opacity: 1;             
-}
-
+✅ Key changes:
 
 
 
@@ -300,8 +296,8 @@ a:hover {
 .contact button {
   margin-top: 1.5rem;
   padding: 0.75rem 1.5rem;
-  background-color: #D1EC3F;
-  color: #212121;
+  background-color: #FF4AB3;
+  color: #FFFFFF;
   border: none;
   border-radius: 5px;
   font-size: 1rem;
@@ -310,7 +306,7 @@ a:hover {
 }
 
 .contact button:hover {
-  background-color: #bcd92f;
+  background-color: #313bf1;
 }
 
 
@@ -382,4 +378,157 @@ a:hover {
   height: auto;
   object-fit: cover;
   border-radius: 8px;
+}
+
+
+
+/*=================== Hero Image ===================*/
+
+.hero-content h1,
+.hero-content p {
+  color: white;
+}
+
+.hero-image {
+  height: 90vh;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: white;
+  overflow: hidden;
+}
+
+/* Blurred background image */
+.hero-image::before {
+  content: "";
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background-image: url('../images/hero-image/full-room.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  filter: blur(2.5px);          /* adjust blur intensity */
+  transform: scale(1.05);     
+  z-index: 0;
+}
+
+/* Overlay */
+.hero-image::after {
+  content: "";
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background: rgba(0, 0, 0, 0.2); /* adjust darkness */
+  z-index: 1;
+}
+
+/* Text content */
+.hero-content {
+  position: relative;
+  z-index: 2; /* on top of the blurred background */
+  max-width: 600px;
+  padding: 1rem;
+}
+
+.hero-content h1 {
+  font-size: 3rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+.hero-content p {
+  font-size: 1.2rem;
+  font-weight: 300;
+  margin-bottom: 1.5rem;
+}
+
+
+
+
+
+/*=================== Catering Button ===================*/
+.button-wrapper {
+  display: flex;                
+  justify-content: center;       
+  margin-top: 1rem;             
+  margin-bottom: 2rem;
+}
+
+/* Button styling */
+.btn {
+  background-color: #FF4AB3;
+  color: #fff;
+  padding: 1rem 1.8rem;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: 500;
+  transition: background 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #313bf1;
+}
+
+
+
+/*========================Interactive Map=================================*/
+/* Responsiveness */
+@media (max-width: 768px) {
+  .hero-content h1 {
+    font-size: 2rem;
+  }
+  .hero-content p {
+    font-size: 1rem;
+  }
+}
+
+
+
+.map-section {
+    width: 100%;
+    position: relative; /* or fixed if you want it always visible */
+    bottom: 0;
+    margin: 2rem auto;   /* space above and below map */
+    max-width: 1200px;
+    padding: 0 1rem;
+}
+.map-section iframe {
+    display: block;
+    width: 100%;
+    height: 300px; /* adjust height as needed */
+    border: 0;
+}
+
+
+
+
+
+
+/*==================Navigational Footer=======================*/
+.site-footer {
+  background-color: #00b0c7;
+  color: white;
+  padding: 1.5rem 2rem;
+  text-align: center;
+}
+
+.site-footer ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  padding: 0;
+  margin-bottom: 1rem;
+}
+
+.site-footer a {
+  color: white;
+  text-decoration: none;
+}
+
+.site-footer a:hover {
+  color: #FF9D60;
 }

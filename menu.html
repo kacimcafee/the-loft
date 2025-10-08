@@ -10,13 +10,14 @@
 
    <body  id="top">
 
-      <!--===================Logo============================-->
-      <header class="site-header">
-         <div class="logo">
-            <img src="images/logo/cropped-logo.png" alt="The Loft logo">
-         </div>
+      <!--=================== Logo ============================-->
+      <div class="logo">
+               <a href="index.html">
+                  <img src="images/logo/cropped-logo.png" alt="The Loft logo">
+               </a>
+            </div>
 
-         <!--===================Nav Bar============================-->
+         <!--=================== Nav Bar ============================-->
          <nav class="navigation-bar" aria-label="Main navigation">
             <ul>
                <li><a href="index.html">Home</a></li>
@@ -28,7 +29,7 @@
                <li><a href="contact.html">Contact</a></li>
             </ul>
          </nav>
-      </header>
+      </div>
 
       <!--===================Menu============================-->
       <main class="menu">
@@ -39,9 +40,9 @@
          </div>
 
          <!--===================Breakfast Bagels============================-->
-         <header class="menu-heading">
+         <div class="menu-heading">
             <h2>Bagel Sandwiches - Breakfast Style</h2>
-         </header>
+         </div>
 
             <section class="breakfast-menu">
             
@@ -136,7 +137,7 @@
                   <img src="images/menu/bph6.jpg">
                   <h3 class="title">Silver Fox</h3>
                   <p>veggie cream cheese, avocado & endive lettuce dressed in lemon & olive oil</p>
-                  <p><b>make it vegan</b></p>
+                  <strong>make it vegan</strong>
                </article>
                
 
@@ -158,9 +159,9 @@
 
 
          <!--===================Open Faced Bagels============================-->
-         <header class="menu-heading">
+         <div class="menu-heading">
             <h2>Open Faced Bagels</h2>
-         </header>
+         </div>
 
             <section class="open-faced-bagels">
 
@@ -168,7 +169,7 @@
                   <img src="images/menu/bph1.jpg">
                   <h3 class="title">Avocado Toast</h3>
                   <p>avocado, over-easy egg, bacon, feta, balsamic glaze, pickled red onion on sourdough bread</p>
-                  <p><b>make it vegan</b></p>
+                  <strong>make it vegan</strong>
                </article>
 
 
@@ -182,7 +183,7 @@
                   <img src="images/menu/bph3.jpg">
                   <h3 class="title">Prince Caspian</h3>
                   <p>cream cheese, sliced avocado, pickled red onion & chili oil</p>
-                  <p><b>make it vegan</b></p>
+                  <strong>make it vegan</strong>
                </article>
 
 
@@ -190,7 +191,7 @@
                   <img src="images/menu/bph4.jpg">
                   <h3 class="title">Stavvy Baby</h3>
                   <p>house-made hummus, feta, chopped olives, assorted veggies, smoked paprika</p>
-                  <p><b>make it vegan</b></p>
+                  <strong>make it vegan</strong>
                </article>
 
 
@@ -199,7 +200,7 @@
                   <img src="images/menu/bph5.jpg">
                   <h3 class="title">BirdDawg</h3>
                   <p>house-made hummus, chili cucumber onion salad, avocado & top Maldon salt</p>
-                  <p><b>vegan</b></p>
+                  <strong>vegan</strong>
                </article>
             
 
@@ -228,9 +229,9 @@
 
 
          <!--===================Burritos & Bowls============================-->
-         <header class="menu-heading">
+         <div class="menu-heading">
             <h2>Burritos & Bowls</h2>
-         </header>
+         </div>
          
             <section class="burritos-and-bowls">
 
@@ -265,9 +266,9 @@
 
 
          <!--===================Bagel Sandwiches============================-->
-         <header class="menu-heading">
+         <div class="menu-heading">
             <h2>Bagel Sandwiches - Lunch Style</h2>
-         </header>
+         </div>
 
             <section class="bagel-sandwiches">
 
@@ -343,23 +344,8 @@
             
             </section>
 
-
-      <!--===================Back to Top============================-->
-      <a href="#top" class="back-to-top">Back to Top</a>
-      
-      <script>
-         const backToTopButton = document.querySelector(".back-to-top");
-
-         window.addEventListener("scroll", () => {
-            if (window.scrollY > 200) {
-               backToTopButton.classList.add("show");
-            } else {
-               backToTopButton.classList.remove("show");
-            }
-         });
-      </script>
-
       </main>
+
    </body>
 
  </html>
