@@ -38,3 +38,5 @@
         [ ] Add alt text to images
 
     [ ] Make responsive for phones / other devices
+
+    [ ] Site photographer / logo creater / typefaces if necessary
