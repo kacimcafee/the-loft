@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+
+<html lan="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="style/style.css">
+        <title>Photobooth</title> <!--fix-->
+    </head>
+
+    <body id="top">
+
+        <!--===================Logo============================-->
+        <header class="site-header">
+            <div class="logo">
+                <img src="images/logo/cropped-logo.png" alt="The Loft logo">
+            </div>
+
+          <!--===================Nav Bar============================-->
+            <nav class="navigation-bar" aria-label="Main navigation">
+                <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="news.html">News</a></li>
+                <li><a href="phonebooth.html">Phonebooth</a></li>
+                <li><a href="catering.html">Catering</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+
+        </header>
+
+          <!--===================Back to Top============================-->
+         <a href="#top" class="back-to-top">Back to Top</a>
+
+         <script>
+            const backToTopButton = document.querySelector(".back-to-top");
+
+            window.addEventListener("scroll", () => {
+               if (window.scrollY > 200) {
+                  backToTopButton.classList.add("show");
+               } else {
+                  backToTopButton.classList.remove("show");
+               }
+            });
+         </script>
+    </body>
+</html>
