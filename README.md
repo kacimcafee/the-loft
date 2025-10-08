@@ -2,6 +2,12 @@
    
     Chose to leave off allergy warnings/prices since you can't order online, focus is solely on menu items themselves 
 
+    Do we have any catering photos?
+
+    Do we have PDF of phonebooth stories / transcript for stories? Do we want to include that, or just list the most popular stories people can hear?
+
+    Upload photos from previous location 
+
 
 
 # TO DO:

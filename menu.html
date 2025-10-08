@@ -348,6 +348,9 @@
 
       </main>
 
+      <!-- Back to Top Button -->
+      <a href="#top" class="back-to-top" aria-label="Back to top">Back to Top</a>
+
 <!--==================== Footer Navigation =========================-->
       <footer class="site-footer">
          <nav aria-label="Footer Navigation">
@@ -374,7 +377,26 @@
             <p>&copy; 2025 The Loft</p>
          </div>
       </footer>
-      
+      <script>
+      // Get the button
+      const backToTopButton = document.querySelector('.back-to-top');
+
+         // Listen for scroll events
+         window.addEventListener('scroll', () => {
+            if (window.scrollY > 300) {  // show button after scrolling down 300px
+               backToTopButton.classList.add('show');
+            } else {
+               backToTopButton.classList.remove('show');
+            }
+         });
+
+         // Smooth scroll when clicked
+         backToTopButton.addEventListener('click', (e) => {
+            e.preventDefault();
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+         });
+      </script>
+
    </body>
 
  </html>
