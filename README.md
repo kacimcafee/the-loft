@@ -17,6 +17,7 @@
 
     [ ] Add layout to pages 
 
+    [ ] Optimize images for smoother load times
 
     [ ] Add clickable social media links
     [ ] Add location to bottom of pages
@@ -33,6 +34,8 @@
         [ ] Menu
         [ ] News
 
+    [ ] trim corners of map 
+    
     [ ] Menu Items:
 
         [ ] upload custom photos to food 
