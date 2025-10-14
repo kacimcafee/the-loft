@@ -9,20 +9,15 @@
 */
   
 /* Updated Color Palette:
-    Lime/Orange Gradient: (to left, #ff7b29, #dfff29)
-    Middle of Lime/Orange Gradient: E1D746
-
-    White: #FFFFFF
-    Black: #212121
-    Lighter orange: #ff7b29
-    Orange:#e65902  
-
-    Cobalt Blue: #313bf1
-    Light Blue: #00b0c7
-    Lime Green: # ecf027d9
-    Lavendar: #
-    Hot Pink: #
-*/
+   
+  Cobalt: 3f22ec
+  light pink: f4b5de
+  dark pink:fa58a7
+  teal: 03e29d
+  yellow: efca62
+  lime green: dff700
+  Blue: #07BDD6
+  */
 
 
 /* ==================================== Fonts ======================================== */
@@ -32,7 +27,7 @@ html, body {
     color: #212121;
     font-family: sans-serif; /*fix*/
     font-size: 1.1rem;
-    background-color: #E6B4F4;
+    background-color: #03e29d;
 }
 
 h1 {
@@ -97,7 +92,7 @@ a:hover {
 
 /* ============================= Header Bar (Gradient) ============================ */
 .site-header {
-  background: linear-gradient(to left, #FF4AB3, #dfff29);
+  background: linear-gradient(to left, #f4b5de, #dff700);
   color: white;
   display: flex;
   align-items: center;
@@ -142,7 +137,7 @@ a:hover {
 }
 
 .navigation-bar a:hover {
-  color: #ed5b00;
+  color: #fa58a7;
 }
 
 /* ============================= Mobile Responsive ============================ */
@@ -262,7 +257,7 @@ a:hover {
   max-width: 500px;            
   margin: 2rem auto;            
   padding: 2rem;               
-  background-color: #fff;
+  background-color: #dff700;
   border-radius: 10px;
   box-shadow: 0 4px 6px rgba(0,0,0,0.1);
   font-family: "Segoe UI", sans-serif; /* fix */
@@ -299,7 +294,7 @@ a:hover {
 .contact button {
   margin-top: 1.5rem;
   padding: 0.75rem 1.5rem;
-  background-color: #FF4AB3;
+  background-color: #fa58a7;
   color: #FFFFFF;
   border: none;
   border-radius: 5px;
@@ -309,7 +304,7 @@ a:hover {
 }
 
 .contact button:hover {
-  background-color: #313bf1;
+  background-color: #3f22ec;
 }
 
 
@@ -357,31 +352,50 @@ a:hover {
 
 /* =============================== News ====================================== */
 
-/*fix*/
-.news-gallery {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 20px;
-  justify-content: space-evenly;
-}
-
-.news-gallery {
-  flex: 1 1 250px;
-  max-width: 300px;
-  background: #fff;
-  border-radius: 10px;
-  overflow: hidden;
-  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-  padding: 15px;
+/*CORRECTED*/
+.news-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
   text-align: center;
 }
 
+.news-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;    
+  gap: 20px;                   
+  margin-bottom: 12rem;
+}
+
+.news-gallery a {
+  flex: 1 1 250px;             /* responsive cards */
+  max-width: 300px;            
+  background: #fff;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 15px;
+  text-align: center;
+  display: block;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.news-gallery a:hover {
+  transform: scale(1.03);
+  box-shadow: 0 6px 10px rgba(0,0,0,0.15);
+}
+
+/* Images — perfect squares, cropped nicely */
 .news-gallery img {
   width: 100%;
-  height: auto;
-  object-fit: cover;
+  aspect-ratio: 1 / 1;         /* keeps them square */
+  object-fit: cover;           /* crops neatly instead of stretching */
   border-radius: 8px;
+  display: block;
 }
+
+
 
 
 
@@ -462,7 +476,7 @@ a:hover {
 
 /* Button styling */
 .btn {
-  background-color: #FF4AB3;
+  background-color: #fa58a7;
   color: #fff;
   padding: 1rem 1.8rem;
   border-radius: 30px;
@@ -472,7 +486,7 @@ a:hover {
 }
 
 .btn:hover {
-  background-color: #313bf1;
+  background-color: #3f22ec;
 }
 
 
@@ -512,7 +526,7 @@ a:hover {
 
 /*========================= Footer Navigation ======================================*/
 .site-footer {
-  background-color: #00b0c7; 
+  background-color: #efca62; 
   color: #fff;
   padding: 2rem 1rem;
   text-align: center;
@@ -539,6 +553,10 @@ a:hover {
   color: #fff;
   text-decoration: none;
   font-size: 1.2rem; 
+}
+
+.site-footer a:hover {
+  color: #fa58a7;
 }
 
 /* ==================================Footer Logo ====================================== */
@@ -576,7 +594,7 @@ a:hover {
   position: fixed;
   bottom: 2rem;
   right: 2rem;
-  background: linear-gradient(to left, #ff7b29, #dfff29);
+  background: linear-gradient(to left, #f4b5de, #E1D746);
   color: #212121;
   font-size: 1rem;
   font-weight: 600;
@@ -601,5 +619,5 @@ a:hover {
 .back-to-top:hover {
   transform: scale(1.05);
   opacity: 1;
-  background: linear-gradient(to left, #e65902, #E1D746);
+  background: linear-gradient(to left, #f4b5de, #E1D746);
 }
