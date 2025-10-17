@@ -8,7 +8,7 @@
     Hot Pink: #FF4AB3
 */
   
-/* Updated Color Palette:
+/* Altered Color Palette:
    
   Cobalt: 3f22ec
   light pink: f4b5de
@@ -19,6 +19,17 @@
   Blue: #07BDD6
   */
 
+  /* NEW Color Palette:
+   
+  Cobalt: 3939FF
+  Light Blue: AEE6ED
+  lime green: d3ff33
+  Orange: #FF5B22
+  Black:191919
+  Purple: DBB8FF
+  Cream:f1e0d5
+  */
+
 
 /* ==================================== Fonts ======================================== */
 html, body {
@@ -27,7 +38,7 @@ html, body {
     color: #212121;
     font-family: sans-serif; /*fix*/
     font-size: 1.1rem;
-    background-color: #03e29d;
+    background-color: #07BDD6;
 }
 
 h1 {
@@ -92,7 +103,7 @@ a:hover {
 
 /* ============================= Header Bar (Gradient) ============================ */
 .site-header {
-  background: linear-gradient(to left, #f4b5de, #dff700);
+  background: #07BDD6;
   color: white;
   display: flex;
   align-items: center;
@@ -129,7 +140,7 @@ a:hover {
 }
 
 .navigation-bar a {
-  color: white;
+  color: #212121;
   text-decoration: none;
   font-weight: 500;
   padding: 0.5rem 0.75rem; /* reduced padding so it fits */
@@ -137,7 +148,7 @@ a:hover {
 }
 
 .navigation-bar a:hover {
-  color: #fa58a7;
+  color: #FF4AB3;
 }
 
 /* ============================= Mobile Responsive ============================ */
@@ -184,7 +195,7 @@ a:hover {
   flex-wrap: wrap;      
   max-width: 300px;   
   background: #fff;
-  border-radius: 10px;
+  border-radius: 3px;
   overflow: hidden;
   box-shadow: 0 4px 6px rgba(0,0,0,0.1);
   padding: 15px;
@@ -205,7 +216,7 @@ a:hover {
 
 .menu-heading h2 {
   font-size: 2rem;          
-  color: #212121;           
+  color: #FFF;           
   font-family: 'Segoe UI', sans-serif; /*fix*/
   font-weight: 600;
 }
@@ -257,7 +268,7 @@ a:hover {
   max-width: 500px;            
   margin: 2rem auto;            
   padding: 2rem;               
-  background-color: #dff700;
+  background-color: #FFF;
   border-radius: 10px;
   box-shadow: 0 4px 6px rgba(0,0,0,0.1);
   font-family: "Segoe UI", sans-serif; /* fix */
@@ -372,7 +383,7 @@ a:hover {
   flex: 1 1 250px;             /* responsive cards */
   max-width: 300px;            
   background: #fff;
-  border-radius: 10px;
+  border-radius: 3px;
   overflow: hidden;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   padding: 15px;
@@ -512,6 +523,7 @@ a:hover {
     max-width: 1200px;
     padding: 0 1rem;
 }
+
 .map-section iframe {
     display: block;
     width: 100%;
@@ -526,7 +538,7 @@ a:hover {
 
 /*========================= Footer Navigation ======================================*/
 .site-footer {
-  background-color: #efca62; 
+  background-color: #07BDD6; 
   color: #fff;
   padding: 2rem 1rem;
   text-align: center;
@@ -580,7 +592,7 @@ a:hover {
   flex-wrap: wrap;
   height: 100%;
   margin: 0;
-  color: #212121;
+  color: #FFF;
   font-family: sans-serif; 
   font-size: 1rem;
   transform: translateX(-20px);
@@ -595,7 +607,7 @@ a:hover {
   bottom: 2rem;
   right: 2rem;
   background: linear-gradient(to left, #f4b5de, #E1D746);
-  color: #212121;
+  color: #FFF;
   font-size: 1rem;
   font-weight: 600;
   padding: 0.75rem 1.5rem;
