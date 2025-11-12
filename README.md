@@ -1,12 +1,12 @@
 # Questions/Notes for Owners:
    
-    Chose to leave off allergy warnings/prices since you can't order online, focus is solely on menu items themselves 
+    [ ] Took off news- too distracting
 
-    Do we have any catering photos?
+    [ ] Change color scheme? each page potentially a different color
 
-    Do we have PDF of phonebooth stories / transcript for stories? Do we want to include that, or just list the most popular stories people can hear?
+    [ ] Do we have PDF of phonebooth stories / transcript for stories? Do we want to include that, or just list the most popular stories people can hear?
 
-    Upload photos from previous location 
+    [ ]  Upload photos from previous location in "about"
 
 
 
