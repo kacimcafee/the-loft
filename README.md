@@ -1,17 +1,8 @@
-# Questions/Notes for Owners:
-   
-    [ ] Took off news- too distracting
-
-    [ ] Change color scheme? each page potentially a different color
-
-    [ ] Do we have PDF of phonebooth stories / transcript for stories? Do we want to include that, or just list the most popular stories people can hear?
-
-    [ ]  Upload photos from previous location in "about"
-
 
 
 # TO DO:
-
+    [ ] **Add store hours
+    [ ] **Add social media linkage
     [ ] Determine color palette for each page
     [ ] Determine typography for each page -- import custom fonts
 
