@@ -606,7 +606,7 @@ a:hover {
   position: fixed;
   bottom: 2rem;
   right: 2rem;
-  background: linear-gradient(to left, #f4b5de, #E1D746);
+  background:#fa58a7;
   color: #FFF;
   font-size: 1rem;
   font-weight: 600;
@@ -616,12 +616,13 @@ a:hover {
   border-radius: 25px;
   box-shadow: 0 4px 6px rgba(0,0,0,0.3);
   transition: transform 0.3s ease, opacity 0.3s ease;
-  opacity: 0;                  /* start hidden */
-  pointer-events: none;        /* ignore clicks when hidden */
+  opacity: 0;                 
+  pointer-events: none;        
   z-index: 999;
   display: inline-block;
-  white-space: nowrap;
+  white-space: nowrap;  
 }
+
 
 .back-to-top.show {
   opacity: 0.9;                /* visible when scrolled down */
@@ -631,5 +632,5 @@ a:hover {
 .back-to-top:hover {
   transform: scale(1.05);
   opacity: 1;
-  background: linear-gradient(to left, #f4b5de, #E1D746);
+  background: #3f22ec;
 }

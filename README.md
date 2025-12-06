@@ -2,33 +2,25 @@
 
 # TO DO:
     [ ] **Add store hours
-    [ ] **Add social media linkage
-    [ ] Determine color palette for each page
-    [ ] Determine typography for each page -- import custom fonts
-
+    [ ] **Add social media linkage on About page
+    [ ] **Add social media buttons to bottom of page
+    
     [ ] Add layout to pages 
 
     [ ] Optimize images for smoother load times
-
-    [ ] Add clickable social media links
-    [ ] Add location to bottom of pages
-    [ ] Navigation links at bottom to increase SEO
     
-    [ ] Add back to top button to menu page (hidden until you scroll down)
     [ ] Correct layout/size for video on about page
+    [ ] Correct YT video image for higher quality
 
     [ ] Main Page Text:
         [ ] Home 
         [ ] About
         [ ] Catering
         [ ] Contact
-        [ ] Menu
-        [ ] News
+        [ ] Phone Booth
 
-    [ ] trim corners of map 
     
     [ ] Menu Items:
-
         [ ] upload custom photos to food 
         [ ] add alt text
 
@@ -40,3 +32,14 @@
     [ ] Make responsive for phones / other devices
 
     [ ] Site photographer / logo creater / typefaces if necessary
+
+
+
+# Nice to Have:
+    [ ] Determine typography for each page -- import custom fonts
+
+
+# Need from Owners:
+    [ ] photos for catering
+    [ ] photos from previous location
+    [ ] menu items
