@@ -5,7 +5,7 @@
       <meta charset="UTF-8">
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <link rel="stylesheet" href="style/style.css">
-      <title>The Loft/About</title>
+      <title>The Loft | About</title>
    </head>
 
    <body>
@@ -31,13 +31,17 @@
 
       <!--=================== Main Content ============================-->
       <main class="about">
-         <p></p>
+         <section class="about-content">
+            <p>Founded in 2021 out of a love for community and a spirit of adventure, The Loft is more than just a coffee shop—it’s a gathering place. From our scratch kitchen to our carefully crafted bagels, we prioritize quality and care in everything we do, front and back of house.</p>
+            <p>Our philosophy centers on connection: we support local bands, collaborate with small businesses, and partner with local suppliers like Cos-bucha to bring you fresh, local flavors. Be sure to try our signature bagel, Lucy in the Sky, an open-faced masterpiece bursting with color, texture, and flavor.</p>
+            <p>As a proud recipient of the 2025 Manitou Springs Manni Award, we strive to be a hub for our neighborhood—hosting fundraisers, supporting the local food pantry, and creating a space where community thrives.</p>
+         </section>
 
          <!-- Video  -->
          <section class="video">
                <div class="video-wrapper">
                   <a href="https://www.youtube.com/watch?v=YdBELvZYPDs" target="_blank" rel="noopener noreferrer">
-                     <img src="https://img.youtube.com/vi/YdBELvZYPDs/mqdefault.jpg" alt="Video Thumbnail">
+                     <img src="images/about-images/staff-photo.jpeg" alt="Video Thumbnail">
                      <div class="play-button">&#9658;</div>
                   </a>
                </div>
@@ -45,8 +49,24 @@
 
          <!-- Images  -->
          <section class="about-photo">
-               <img src="images/about-images/staff-photo.jpeg" alt="Staff Photo">
+            <div class="carousel-arrow left">&#10094;</div>
+            <div class="carousel-arrow right">&#10095;</div>
+
+            <div class="about-photo-wrapper">
+               <img src="images/about-images/manni.jpg" alt="">
+               <img src="images/about-images/after-3.jpg" alt="">
+               <img src="images/about-images/old-shop-4.jpg" alt="">
+               <img src="images/about-images/old-shop-1.jpg" alt="">
+               <img src="images/about-images/painting-menu.jpg" alt="">
+               <img src="images/about-images/4-yrs.jpg" alt="">
+               
+               
+               <img src="images/about-images/bagel-boy.jpg" alt="">
+               <img src="images/about-images/owners.jpg" alt="">
+               <img src="images/about-images/shop-reno-1.jpg" alt="">
+            </div>
          </section>
+
       </main>
 
       <!--==================== Footer Navigation =========================-->
@@ -82,5 +102,31 @@
       </footer>
 
    </body>
+
+   <script>
+      const wrapper = document.querySelector('.about-photo-wrapper');
+      const leftArrow = document.querySelector('.carousel-arrow.left');
+      const rightArrow = document.querySelector('.carousel-arrow.right');
+
+      let scrollAmount = 0;
+      const gap = 16; // same as CSS gap
+      const slideWidth = 300 + gap; // image width + gap
+
+      // Calculate maximum scroll based on number of images
+      const slides = wrapper.querySelectorAll('img');
+      const maxScroll = (slides.length * slideWidth) - wrapper.parentElement.offsetWidth;
+
+      rightArrow.addEventListener('click', () => {
+      scrollAmount += slideWidth;
+      if (scrollAmount > maxScroll) scrollAmount = maxScroll; // stop at end
+      wrapper.style.transform = `translateX(-${scrollAmount}px)`;
+      });
+
+      leftArrow.addEventListener('click', () => {
+      scrollAmount -= slideWidth;
+      if (scrollAmount < 0) scrollAmount = 0; // stop at beginning
+      wrapper.style.transform = `translateX(-${scrollAmount}px)`;
+      });
+   </script>
 
 </html>
