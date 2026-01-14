@@ -1,20 +1,21 @@
 /* Original Color Palette:
-    White: #FFFFFF
+    White: #F7F8FA
     Black: #212121
     Orange: #FF9D60
-    Blue: #07BDD6
     Lime Green: #D1EC3F
     Lavendar: #E6B4F4
     Hot Pink: #FF4AB3
+    Light Blue: 07BDD6
 
 NEW Color Palette:
    
   Cobalt: 3939FF
-  Light Blue: 07BDD6
+  Light Blue: 2BBEF0
   Black:191919
   Pink: #FF4AB3
   Purple: DBB8FF
-  White: ##F7F8FA
+  White : F5F6F4
+  
 */
 
 
@@ -25,7 +26,7 @@ html, body {
     color: #212121;
     font-family: sans-serif;
     font-size: 1.1rem;
-    background-color: #F7F8FA;
+    background-color: #F5F6F4;
 }
 
 h1 {
@@ -62,7 +63,7 @@ a {
 }
 
 a:hover {
-  color: #F7F8FA   
+  color: #F5F6F4   
 }
 
 
@@ -86,11 +87,21 @@ a:hover {
 
 
 
-
-
-/* ============================= Header Bar (Gradient) ============================ */
+  /* ============================= Header Bar ============================ */
 .site-header {
-  background: #07BDD6;
+  background:
+    radial-gradient(circle at 15% 30%, #2BBEF0 0%, transparent 40%),   /* blue */
+    radial-gradient(circle at 85% 25%, #F06AAE 0%, transparent 45%),   /* pink */
+
+    /* NEW: soft orange bridge between pink + blue */
+    radial-gradient(circle at 65% 40%, rgba(255, 154, 60, 0.55) 0%, transparent 45%),
+
+    radial-gradient(circle at 50% 50%, #32D74B 0%, transparent 42%),   /* lime */
+    radial-gradient(circle at 30% 75%, #36CFEA 0%, transparent 45%),   /* cyan */
+    radial-gradient(circle at 70% 70%, #FF7FBF 0%, transparent 40%),   /* light pink */
+
+    #2BBEF0; /* base color fallback */
+
   color: white;
   display: flex;
   align-items: center;
@@ -102,6 +113,7 @@ a:hover {
   z-index: 10;
   overflow-x: hidden;
 }
+
 
 /* ============================= Navigation Bar ============================ */
 .navigation-bar {
@@ -127,7 +139,7 @@ a:hover {
 }
 
 .navigation-bar a {
-  color: #212121;
+  color: #F5F6F4;
   text-decoration: none;
   font-weight: 500;
   padding: 0.5rem 0.75rem; 
@@ -159,78 +171,53 @@ a:hover {
 
 
 /* ===================================== Menu ========================================= */
-.menu-container {
-  max-width: 1200px;      
-  margin: 0 auto;          
-  padding: 0 1rem;         
-  text-align: center;        
+.menu {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+
+  max-width: 1200px;   /* prevents ultra-wide screens from going wild */
+  margin: 0 auto;     /* centers container on the page */
+  padding: 2rem;
+}
+
+.menu img {
+  flex: 1 1 0;         /* makes images share space evenly */
+  max-width: 100%;
+  height: auto;
+
+  object-fit: contain;
+   box-shadow:
+    0 12px 28px rgba(0, 0, 0, 0.28),
+    0 6px 12px rgba(0, 0, 0, 0.18);
+  
+}
+
+/*=================== Menu PDF Button ===================*/
+.menu-pdf {
+  display: flex;
+  justify-content: center;
+  margin: 2rem 0;
 }
 
 .menu-pdf a {
-  color: #3939FF;
-}
-
-.menu-pdf a:hover {
-  color: #FF4AB3;
-}
-
-.breakfast-menu, 
-.open-faced-bagels, 
-.burritos-and-bowls, 
-.bagel-sandwiches {
-  display: flex;
-  flex-wrap: wrap;     
-  gap: 20px;           
-  justify-content: space-evenly;
-  margin-bottom: 12rem;
-}
-
-.menu-item {
-  flex: 1 1 250px;
-  flex-wrap: wrap;      
-  max-width: 300px;   
-  background: #FFF;
-  border-radius: 3px;
-  overflow: hidden;
-  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-  padding: 15px;
-  text-align: center;
-}
-
-.menu-item img {
-  width: 100%;
-  height: 200px;
-  object-fit: cover;   
-  border-radius: 8px;
-}
-
-.menu-heading {
-  text-align: center;    
-  margin: 4rem 0 2rem 0; 
-}
-
-.menu-heading h2 {
-  font-size: 2rem;          
-  color: #212121;           
-  font-family: 'Segoe UI', sans-serif; 
+  color: #3939FF !important;
+  text-decoration: none;
   font-weight: 600;
-}
-
-.image-gallery {
-  display: flex;
-  gap: 1rem;
-  justify-content: center;
-}
-
-.image-gallery img {
-  height: 100%;    
-  width: auto;   
-  flex: 1 1 250px;
-  height: auto;
-  max-width: 100%;
-  object-fit: cover;
+  font-size: 1.2rem;
+  padding: 1rem 2rem;
+  border: 2px solid #3939FF;
   border-radius: 8px;
-  display: block;
+  transition: background-color 0.3s, color 0.3s, border-color 0.3s;
+}
+
+.menu-pdf a:hover,
+.menu-pdf a:focus-visible {
+  color: #FF4AB3 !important;
+  border-color: #FF4AB3;
+  background-color: transparent;
 }
 
 
@@ -241,36 +228,11 @@ a:hover {
 
 /* =============================== About ====================================== */
 
-/* Original
-.about-content {
-  display: flex;
-  flex-direction: column;  
-  gap: 1rem;               
-  justify-content: center; 
-  align-items: center;     
-  text-align: center;     
-}
-
-
-.about-photo {
-  display: flex;
-  gap: 1rem;
-  justify-content: center;
-}
-
-.about-photo img {
-  width: 50%;        
-  max-width: 400px; 
-  height: auto;
-  border-radius: 8px;
-  display: block;
-}
-*/
 /* Carousel container */
 .about-photo {
   position: relative;
-  max-width: 900px;      /* limits carousel width */
-  margin: 2rem auto;     /* centers on page */
+  max-width: 900px;      
+  margin: 2rem auto;     
   overflow: hidden;
   border-radius: 8px;
 }
@@ -282,10 +244,10 @@ a:hover {
   gap: 1rem;
 }
 
-/* Carousel images */
+
 .about-photo-wrapper img {
   width: 100%;
-  max-width: 300px;    /* controls size of each slide */
+  max-width: 300px;    
   flex-shrink: 0;
   border-radius: 8px;
   object-fit: cover;
@@ -297,7 +259,7 @@ a:hover {
   top: 50%;
   transform: translateY(-50%);
   font-size: 2rem;
-  color: #3939FF;   /* your accent blue */
+  color: #3939FF;   
   background: rgba(255,255,255,0.7);
   border-radius: 50%;
   padding: 0.2rem 0.5rem;
@@ -373,7 +335,7 @@ a:hover {
   margin-top: 1.5rem;
   padding: 0.75rem 1.5rem;
   background-color: #fa58a7;
-  color: #F7F8FA;
+  color: #F5F6F4;
   border: none;
   border-radius: 5px;
   font-size: 1rem;
@@ -383,6 +345,21 @@ a:hover {
 
 .contact button:hover {
   background-color: #3f22ec;
+}
+
+/*=================== Contact Image ===================*/
+.image-gallery {
+  display: flex;
+  justify-content: center;
+  margin: 2rem 0;
+}
+
+.image-gallery img {
+  max-width: 100%;
+  width: 400px;        /* controls visual size */
+  height: auto;
+  border-radius: 10px;
+  display: block;
 }
 
 
@@ -418,7 +395,7 @@ a:hover {
   top: 50%;                 
   left: 50%;                
   transform: translate(-50%, -50%);  
-  font-size: 3rem;          
+  font-size: 7rem;          
   color: white;
   text-shadow: 0 0 10px rgba(0,0,0,0.7);
   pointer-events: none;     
@@ -448,7 +425,7 @@ a:hover {
 .news-gallery a {
   flex: 1 1 250px;            
   max-width: 300px;            
-  background: #F7F8FA;
+  background: #F5F6F4;
   border-radius: 3px;
   overflow: hidden;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
@@ -599,7 +576,7 @@ a:hover {
 /* Button styling */
 .btn {
   background-color: #fa58a7;
-  color: #F7F8FA;
+  color: #F5F6F4;
   padding: 1rem 1.8rem;
   border-radius: 30px;
   text-decoration: none;
@@ -628,24 +605,28 @@ a:hover {
 
 .map-section {
     width: 100%;
-    position: relative; /* or fixed if you want it always visible */
+    position: relative; 
     bottom: 0;
-    margin: 2rem auto;   /* space above and below map */
+    margin: 2rem auto;   
     max-width: 1200px;
     padding: 0 1rem;
+    border-radius: 6px;
+    box-shadow:
+       0 4px 8px rgba(0, 0, 0, 0.16),   
+       0 10px 24px rgba(0, 0, 0, 0.14);
 }
 
 .map-section iframe {
     display: block;
     width: 100%;
-    height: 300px; /* adjust height as needed */
+    height: 300px; 
     border: 0;
 }
 
 
 .footer-hours {
    font-size: .9rem;
-   color: #F7F8FA;
+   color: #F5F6F4;
    opacity: 0.8;
    text-align: center;
    margin-top: 1rem;
@@ -655,11 +636,33 @@ a:hover {
 
 /*========================= Footer Navigation ======================================*/
 .site-footer {
-  background-color: #07BDD6; 
-  color: #F7F8FA;
+  background:
+    conic-gradient(
+      from 200deg at 55% 45%,
+      rgba(255, 154, 60, 0.95),   
+      rgba(250, 88, 167, 0.95),   
+      rgba(186, 104, 200, 0.9),   
+      rgba(255, 209, 102, 0.95),  
+      rgba(88, 214, 141, 0.9),    
+      rgba(255, 122, 89, 0.95),   
+      rgba(255, 154, 60, 0.95)
+    ),
+
+    radial-gradient(ellipse at 25% 30%, rgba(88, 214, 141, 0.65) 0%, transparent 55%),
+    radial-gradient(ellipse at 80% 25%, rgba(186, 104, 200, 0.65) 0%, transparent 60%),
+    radial-gradient(ellipse at 35% 85%, rgba(255, 209, 102, 0.6) 0%, transparent 58%),
+    radial-gradient(ellipse at 75% 80%, rgba(250, 88, 167, 0.6) 0%, transparent 55%),
+
+    #2BBEF0;
+
+  color: #F5F6F4;
   padding: 2rem 1rem;
   text-align: center;
 }
+
+
+
+
 
 .site-footer nav {
   display: flex;
@@ -679,7 +682,7 @@ a:hover {
 }
 
 .site-footer nav ul li a {
-  color: #F7F8FA;
+  color: #F5F6F4;
   text-decoration: none;
   font-size: 1.2rem; 
 }
@@ -709,7 +712,7 @@ a:hover {
   flex-wrap: wrap;
   height: 100%;
   margin: 0;
-  color: #F7F8FA;
+  color: #F5F6F4;
   font-family: sans-serif; 
   font-size: 1rem;
   transform: translateX(-20px);
@@ -724,7 +727,7 @@ a:hover {
   bottom: 2rem;
   right: 2rem;
   background:#fa58a7;
-  color: #F7F8FA;
+  color: #F5F6F4;
   font-size: 1rem;
   font-weight: 600;
   padding: 0.75rem 1.5rem;
@@ -781,4 +784,25 @@ a:hover {
   align-items: center;     
   margin: 1rem;
   text-align: center;      
+}
+/*=================== Phonebooth Transcript Link ===================*/
+.phonebooth-pdf {
+  display: flex;
+  justify-content: center;
+  margin: 2rem 0;
+}
+
+.phonebooth-pdf a {
+  color: #3939FF;
+  text-decoration: underline;
+  font-weight: 600;
+  font-size: 1.1rem;
+  letter-spacing: 0.02em;
+
+  transition: color 0.3s ease;
+}
+
+.phonebooth-pdf a:hover,
+.phonebooth-pdf a:focus-visible {
+  color: #FF4AB3;
 }

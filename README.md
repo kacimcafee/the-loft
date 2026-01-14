@@ -1,28 +1,22 @@
+# Owner Questions: 
+    [ ] do you want me to use different images?
+    [ ] do you want me to edit the images so they are all a little more crisp and vibrant?
 
 
 # TO DO:
-    [ ] **Add store hours
+    [ ] **Add store hours in footer
     [ ] **Add social media linkage on About page
     [ ] **Add social media buttons to bottom of page
-    
-    [ ] Add layout to pages 
 
     [ ] Optimize images for smoother load times
-    
-    [ ] Correct layout/size for video on about page
-    [ ] Correct YT video image for higher quality
 
     [ ] Main Page Text:
-        [ ] Home 
-        [ ] About
+        [X] Home 
+        [X] About
         [ ] Catering
-        [ ] Contact
-        [ ] Phone Booth
+        [X] Contact
+        [X] Phone Booth
 
-    
-    [ ] Menu Items:
-        [ ] upload custom photos to food 
-        [ ] add alt text
 
  
     [ ] Add a11y
@@ -31,15 +25,8 @@
 
     [ ] Make responsive for phones / other devices
 
-    [ ] Site photographer / logo creater / typefaces if necessary
-
 
 
 # Nice to Have:
     [ ] Determine typography for each page -- import custom fonts
 
-
-# Need from Owners:
-    [ ] photos for catering
-    [ ] photos from previous location
-    [ ] menu items
