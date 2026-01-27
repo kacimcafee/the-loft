@@ -1,7 +1,7 @@
 ## Live Demo
-    This is an in-progress custom website commision for cafe and bagel shop The Loft. While still incomplete, you can access the draft website here: 
+This is an in-progress custom website commision for cafe and bagel shop The Loft. While still incomplete, you can access the draft website here: 
    
-    https://kacimcafee.github.io/the-loft/ 
+https://kacimcafee.github.io/the-loft/
 
 
 
