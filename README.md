@@ -1,3 +1,14 @@
+## Project Note
+    This is an in-progress custom website commision for cafe and bagel shop The Loft. While still incomplete, you can access the draft website here: 
+   
+    https://kacimcafee.github.io/the-loft/ 
+
+
+
+
+
+
+
 # Owner Questions: 
     [ ] do you want me to use different images?
     [ ] do you want me to edit the images so they are all a little more crisp and vibrant?
