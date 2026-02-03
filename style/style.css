@@ -138,6 +138,7 @@ a:hover {
   margin: 0;
 }
 
+
 .navigation-bar a {
   color: #F5F6F4;
   text-decoration: none;
@@ -147,7 +148,7 @@ a:hover {
 }
 
 .navigation-bar a:hover {
-  color: #FF4AB3;
+  color: #212121;
 }
 
 /* ============================= Mobile Responsive ============================ */
@@ -283,7 +284,13 @@ a:hover {
   }
 }
 
-
+.about-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center; 
+  text-align: center;  
+  margin: 0;
+}
 
 
 
@@ -688,7 +695,7 @@ a:hover {
 }
 
 .site-footer a:hover {
-  color: #fa58a7;
+  color: #212121;
 }
 
 /* ==================================Footer Logo ====================================== */
