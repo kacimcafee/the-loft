@@ -1,13 +1,4 @@
-/* Original Color Palette:
-    White: #F7F8FA
-    Black: #212121
-    Orange: #FF9D60
-    Lime Green: #D1EC3F
-    Lavendar: #E6B4F4
-    Hot Pink: #FF4AB3
-    Light Blue: 07BDD6
-
-NEW Color Palette:
+/* NEW Color Palette:
    
   Cobalt: 3939FF
   Light Blue: 2BBEF0
@@ -24,27 +15,34 @@ html, body {
     height: 100%;
     margin: 0;
     color: #212121;
-    font-family: sans-serif;
+    font-family: sans-serif; /* fallback for body text */
     font-size: 1.1rem;
     background-color: #F5F6F4;
 }
 
+/* Headings use Poppins first, then Segoe UI, then sans-serif */
 h1 {
-   
-   font-family: 'Segoe UI', sans-serif;
+    font-family: 'Poppins', 'Segoe UI', sans-serif;
     font-size: 2.2rem;
     color: #212121;
     margin-top: 3rem; 
 }
 
-
-
-h2,
-h3,
-h4 {
-    font-family: 'Segoe UI', sans-serif; 
-    font-size: 1.5rem;
+h2, h3, h4 {
+    font-family: 'Poppins', 'Segoe UI', sans-serif; 
     color: #212121;
+}
+
+h2 {
+    font-size: 1.5rem;
+}
+
+h3 {
+    font-size: 1.3rem;
+}
+
+h4 {
+    font-size: 1.1rem;
 }
 
 
@@ -726,7 +724,7 @@ a:hover {
 }
 
 .socials img {
-  width: 40px;          
+  width: 50px;          
   height: auto;         
   margin: 0 8px;        
   transition: transform 0.3s ease;
