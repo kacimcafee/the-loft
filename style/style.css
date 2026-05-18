@@ -792,3 +792,16 @@ a:hover {
 .storybooth-pdf a:focus-visible {
   color: #FF4AB3;
 }
+  
+@media (max-width: 768px) {
+.storybooth-images {
+    flex-direction: column;
+    align-items: center;
+    margin: 1rem;
+  }
+
+.storybooth-images img {
+    width: 90%; 
+    margin: 0 0 1rem 0;
+  }
+}
