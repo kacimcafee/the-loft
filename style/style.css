@@ -214,7 +214,7 @@ a:hover {
 
 .about-photo {
   position: relative;
-  max-width: 900px;      
+  max-width: 1300px;      
   margin: 2rem auto;     
   overflow: hidden;
   border-radius: 8px;
@@ -239,11 +239,11 @@ a:hover {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
-  font-size: 2rem;
+  font-size: 3rem;
   color: #3939FF;   
   background: rgba(255,255,255,0.7);
   border-radius: 50%;
-  padding: 0.2rem 0.5rem;
+  padding: 0.5rem 0.8rem;
   cursor: pointer;
   z-index: 10;
   user-select: none;
@@ -263,9 +263,10 @@ a:hover {
   display: flex;
   flex-direction: column;
   align-items: center; 
-  text-align: center;  
-  margin: 0;
-}
+  text-align: center; 
+  width: 87%; 
+  margin: 0 auto;
+} 
 
 .about-socials {
   display: flex;
@@ -486,7 +487,7 @@ a:hover {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  filter: blur(2.5px);          /* adjust blur intensity */
+  filter: blur(2.5px);         
   transform: scale(1.05);     
   z-index: 0;
 }
@@ -513,12 +514,13 @@ a:hover {
   font-size: 3rem;
   font-weight: 600;
   margin-bottom: 0.5rem;
+  
 }
 
 .hero-content p {
   font-size: 1.2rem;
   font-weight: 300;
-  margin-bottom: 1.5rem;
+  margin-bottom: 3rem;
 }
 
 
@@ -724,9 +726,9 @@ a:hover {
 }
 
 .socials img {
-  width: 50px;          
+  width: 40px;          
   height: auto;         
-  margin: 0 8px;        
+  margin: 0 10px;        
   transition: transform 0.3s ease;
 }
 
