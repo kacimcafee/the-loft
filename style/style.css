@@ -794,6 +794,7 @@ a:hover {
   border-radius: 8px;
   display: block;
   flex-wrap: wrap; 
+  margin: 0 0 3rem 0;
 }
 
 .phonebooth {
